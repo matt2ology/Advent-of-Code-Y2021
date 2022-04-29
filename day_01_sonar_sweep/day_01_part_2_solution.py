@@ -22,7 +22,6 @@ def main():
         else:
             print("{} - (No Change)".format(next_sweep))
 
-
     print("there are {} measurements that are larger than the previous measurement".format(increased_depth_counter))
 
 
