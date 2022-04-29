@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def main():
     sonar_sweep_report_file = open("input.txt","r")
     list_of_sonar_sweeps = []
