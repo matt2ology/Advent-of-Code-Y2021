@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def main():
-    sonar_sweep_report_file = open("input.txt","r")
+    sonar_sweep_report_file = open("./../input_files/day_01/input.txt", "r")
     list_of_sonar_sweeps = []
 
     list_of_sonar_sweeps = sonar_sweep_report_file.readlines()
