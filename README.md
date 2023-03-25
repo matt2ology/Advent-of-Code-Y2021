@@ -1,6 +1,6 @@
-# advent-of-code
+# Advent of Code
 
-## [Advent of Code - Year 2021](https://adventofcode.com/2021)
+## [Year 2021](https://adventofcode.com/2021)
 
 ## Rust
 
