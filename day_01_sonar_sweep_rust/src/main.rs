@@ -28,7 +28,7 @@ fn main() {
         println!("Current depth: {}", depth_counter);
         if next_sweep > values[i] {
             println!("{} > {} : Increased", next_sweep, values[i]);
-            depth_counter += 1;
+            increase_depth_counter(&mut depth_counter);
         } else if next_sweep < values[i] {
             println!("{} < {} : Decreased", next_sweep, values[i]);
         } else {
@@ -40,4 +40,20 @@ fn main() {
         "There are {} measurements that are larger than the previous measurement",
         depth_counter
     );
+}
+
+/**
+ Increase depth counter by 1
+* @param `depth_counter` - reference to depth counter
+* @return void
+
+## Notes on Rust syntax
+
+- [`&mut` is a mutable reference to a value](https://doc.rust-lang.org/reference/expressions/reference-expr.html#mutable-references)
+- [The `*` is a dereference operator](https://doc.rust-lang.org/reference/expressions/operator-expr.html#the-dereference-operator)
+- [It's like a pointer in C or C++](https://www.geeksforgeeks.org/cpp-pointers/)
+    - [It's a reference to the value that the pointer points to](https://stackoverflow.com/questions/3730019/what-is-the-difference-between-a-pointer-variable-and-a-pointer)
+ */
+fn increase_depth_counter(depth_counter: &mut i32) {
+    *depth_counter += 1;
 }
