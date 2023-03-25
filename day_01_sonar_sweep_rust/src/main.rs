@@ -10,7 +10,7 @@ fn main() {
     // vector to store values from lines in file
     let mut values: Vec<i32> = Vec::new();
     // start at 1 because first value is always increased
-    let mut increased_depth_counter: i32 = 0;
+    let mut depth_counter: i32 = 0;
 
     /* loop through lines in file */
     file_contents.lines().for_each(|line| {
@@ -25,9 +25,10 @@ fn main() {
      */
     for i in 0..values.len() - 1 {
         let next_sweep: i32 = values[i + 1];
+        println!("Current depth: {}", depth_counter);
         if next_sweep > values[i] {
             println!("{} > {} : Increased", next_sweep, values[i]);
-            increased_depth_counter += 1;
+            depth_counter += 1;
         } else if next_sweep < values[i] {
             println!("{} < {} : Decreased", next_sweep, values[i]);
         } else {
@@ -37,6 +38,6 @@ fn main() {
 
     println!(
         "There are {} measurements that are larger than the previous measurement",
-        increased_depth_counter
+        depth_counter
     );
 }
