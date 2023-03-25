@@ -1,0 +1,6 @@
+[submodule "advent-of-code-y2021-rust"]
+	path = advent-of-code-y2021-rust
+	url = git@github.com:matt2ology/advent-of-code-y2021-rust.git
+[submodule "advent-of-code-y2021-python"]
+	path = advent-of-code-y2021-python
+	url = git@github.com:matt2ology/advent-of-code-y2021-python.git
