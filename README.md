@@ -1,3 +1,5 @@
 # [Advent of Code](https://adventofcode.com/)
 
 ## [Year 2021](https://adventofcode.com/2021)
+
+- [In Rust](https://github.com/matt2ology/advent-of-code-y2021-rust)
